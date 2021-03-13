@@ -28,8 +28,9 @@ window.addEventListener('load', function (){
     });
 
     let rocket = document.getElementById('rocket');
-    //rocket.style.marginLeft = '0px';
-    //rocket.style.marginTop = '0px';
+    rocket.style.position = 'absolute';
+    rocket.style.marginLeft = '0px';
+    rocket.style.marginTop = '0px';
 
     document.getElementById('left').addEventListener('click', function () {
         rocket.style.marginLeft = String(Number(rocket.style.marginLeft.slice(0, -2)) - 10) + 'px';
